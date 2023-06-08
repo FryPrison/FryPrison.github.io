@@ -9,7 +9,19 @@ body {
 <h4>Guilded Server: guilded.gg/FryPrison</h4>
 <h4>Subreddit: reddit.com/r/FryPrison</h4>
 <h4>Twitter: twitter.com/FryPrison</h4>
-<div>
-     <input type="text" value="FryPrison.minefort.com" id="copyMe">
-     <button onclick="copyMyText()">Copy To Clipboard</button>
-</div>
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="myText" onclick="myFunction()">click this XD</p>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myText");
+  navigator.clipboard.writeText(copyText.innerText);
+  alert("Copied the text: " + copyText.innerText);
+}
+</script>
+
+</body>
+</html>
